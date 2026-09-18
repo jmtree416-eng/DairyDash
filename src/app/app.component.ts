@@ -4,6 +4,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { addIcons } from 'ionicons';
 import {
   gridOutline,
+  cubeOutline,
   cartOutline,
   informationCircleOutline,
   peopleOutline,
@@ -24,6 +25,7 @@ export class AppComponent {
   constructor() {
     addIcons({
       gridOutline,
+      cubeOutline,
       cartOutline,
       informationCircleOutline,
       peopleOutline,
@@ -32,6 +34,7 @@ export class AppComponent {
       leafOutline,
       ribbonOutline,
       'grid-outline': gridOutline,
+      'cube-outline': cubeOutline,
       'cart-outline': cartOutline,
       'information-circle-outline': informationCircleOutline,
       'people-outline': peopleOutline,

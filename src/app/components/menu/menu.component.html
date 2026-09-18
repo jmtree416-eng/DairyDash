@@ -1,10 +1,10 @@
 <ion-menu contentId="main" type="overlay">
   <ion-content>
     <div class="menu-brand">
-      <div class="menu-brand-mark">🥛</div>
+      <div class="menu-brand-mark">M</div>
       <div>
-        <p class="menu-eyebrow">FINAL PROJECT</p>
-        <h1>MilkSwift</h1>
+        <p class="menu-eyebrow">MILKSWIFT</p>
+        <h1>Milk products</h1>
       </div>
     </div>
 
@@ -14,10 +14,11 @@
       <ion-menu-toggle *ngFor="let p of appPages" [autoHide]="false">
         <ion-item
           [routerLink]="[p.url]"
-          routerDirection="root"
+          routerDirection="none"
           lines="none"
-          detail="false"
+          [detail]="false"
           routerLinkActive="selected"
+          [routerLinkActiveOptions]="{ exact: true }"
         >
           <ion-icon aria-hidden="true" slot="start" [name]="p.icon"></ion-icon>
           <ion-label>{{ p.title }}</ion-label>
@@ -25,6 +26,6 @@
       </ion-menu-toggle>
     </ion-list>
 
-    <ion-note class="menu-footer">Dairy Dash Logistics</ion-note>
+    <ion-note class="menu-footer">Fresh ideas, thoughtfully made.</ion-note>
   </ion-content>
 </ion-menu>

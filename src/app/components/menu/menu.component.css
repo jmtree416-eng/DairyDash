@@ -1,3 +1,7 @@
+:host {
+  display: contents;
+}
+
 .menu-brand {
   display: flex;
   align-items: center;
@@ -27,7 +31,8 @@
 #inbox-list { padding: 16px 12px 8px; background: transparent; }
 #inbox-list ion-list-header { padding: 0 12px 8px; color: #8c7061; font-size: 12px; }
 #inbox-list ion-item { --padding-start: 12px; --inner-padding-end: 12px; --min-height: 48px; margin: 3px 0; border-radius: 12px; color: #4a3b34; font-weight: 700; }
-#inbox-list ion-item.selected { --background: #e8926b; color: #241915; font-weight: 700; }
+#inbox-list ion-item.selected { --background: #e8926b; --color: #241915; color: #241915; font-weight: 700; }
+#inbox-list ion-item.selected ion-icon { color: #241915; }
 #inbox-list ion-icon { color: #a56b57; font-size: 21px; }
 .menu-footer { display: block; padding: 22px 24px; color: #9f877a; font-size: 13px; }
 

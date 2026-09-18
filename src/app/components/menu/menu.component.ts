@@ -12,6 +12,13 @@ import {
   IonNote,
   IonMenuToggle,
 } from '@ionic/angular';
+import { addIcons } from 'ionicons';
+import {
+  cubeOutline,
+  gridOutline,
+  informationCircleOutline,
+  peopleOutline,
+} from 'ionicons/icons';
 
 interface AppPage {
   title: string;
@@ -49,7 +56,7 @@ export class MenuComponent {
     {
       title: 'List of Products',
       url: '/products',
-      icon: 'cart-outline',
+      icon: 'cube-outline',
     },
     {
       title: 'About the App',
@@ -62,4 +69,17 @@ export class MenuComponent {
       icon: 'people-outline',
     },
   ];
+
+  constructor() {
+    addIcons({
+      cubeOutline,
+      gridOutline,
+      informationCircleOutline,
+      peopleOutline,
+      'cube-outline': cubeOutline,
+      'grid-outline': gridOutline,
+      'information-circle-outline': informationCircleOutline,
+      'people-outline': peopleOutline,
+    });
+  }
 }
