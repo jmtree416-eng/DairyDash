@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonApp, IonSplitPane, IonRouterOutlet } from '@ionic/angular/standalone';
+import { IonApp, IonSplitPane, IonRouterOutlet } from '@ionic/angular';
 import { MenuComponent } from './components/menu/menu.component';
 import { addIcons } from 'ionicons';
 import {

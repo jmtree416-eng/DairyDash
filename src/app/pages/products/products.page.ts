@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonSearchbar } from '@ionic/angular/standalone';
+import { IonSearchbar } from '@ionic/angular';
 import { PageLayoutComponent } from '../../components/page-layout/page-layout.component';
 
 interface Product {

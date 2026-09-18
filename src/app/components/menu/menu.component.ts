@@ -11,7 +11,7 @@ import {
   IonLabel,
   IonNote,
   IonMenuToggle,
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 
 interface AppPage {
   title: string;

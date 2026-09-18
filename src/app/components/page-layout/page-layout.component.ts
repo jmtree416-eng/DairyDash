@@ -6,7 +6,7 @@ import {
   IonMenuButton,
   IonTitle,
   IonContent,
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 
 @Component({
   selector: 'app-page-layout',
