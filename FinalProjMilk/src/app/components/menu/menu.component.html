@@ -1,0 +1,30 @@
+<ion-menu contentId="main" type="overlay">
+  <ion-content>
+    <div class="menu-brand">
+      <div class="menu-brand-mark">🥛</div>
+      <div>
+        <p class="menu-eyebrow">FINAL PROJECT</p>
+        <h1>MilkSwift</h1>
+      </div>
+    </div>
+
+    <ion-list id="inbox-list">
+      <ion-list-header>Menu</ion-list-header>
+
+      <ion-menu-toggle *ngFor="let p of appPages" [autoHide]="false">
+        <ion-item
+          [routerLink]="[p.url]"
+          routerDirection="root"
+          lines="none"
+          detail="false"
+          routerLinkActive="selected"
+        >
+          <ion-icon aria-hidden="true" slot="start" [name]="p.icon"></ion-icon>
+          <ion-label>{{ p.title }}</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+
+    <ion-note class="menu-footer">Dairy Dash Logistics</ion-note>
+  </ion-content>
+</ion-menu>
