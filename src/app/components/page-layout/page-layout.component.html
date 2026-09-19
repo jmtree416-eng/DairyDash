@@ -15,10 +15,10 @@
       </ion-toolbar>
     </ion-header>
     <main class="page-content">
-      <section class="page-intro">
-        <p class="page-eyebrow">{{ eyebrow }}</p>
+      <section class="page-intro" *ngIf="eyebrow || description">
+        <p class="page-eyebrow" *ngIf="eyebrow">{{ eyebrow }}</p>
         <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
+        <p *ngIf="description">{{ description }}</p>
       </section>
       <ng-content></ng-content>
     </main>

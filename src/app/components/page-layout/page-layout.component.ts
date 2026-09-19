@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import {
   IonHeader,
@@ -14,6 +15,7 @@ import {
   styleUrls: ['./page-layout.component.css'],
   standalone: true,
   imports: [
+    CommonModule,
     IonHeader,
     IonToolbar,
     IonButtons,

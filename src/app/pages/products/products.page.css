@@ -34,7 +34,8 @@
 }
 
 .product-tile {
-  background: #ffffff;
+  background: #f9e2d2;
+  border: 1px solid #f0c5a3;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 22px rgba(74, 59, 52, 0.06);
@@ -42,7 +43,7 @@
 
 .product-tile-photo {
   aspect-ratio: 1 / 1;
-  background: linear-gradient(160deg, #f6da8c 0%, #e8926b 100%);
+  background: #f7d3b3;
   overflow: hidden;
 }
 

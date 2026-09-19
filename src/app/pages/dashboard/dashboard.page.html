@@ -1,32 +1,21 @@
-<app-page-layout
-  title="Dashboard"
-  eyebrow="OVERVIEW"
-  description="Your milk shop at a glance."
->
+<app-page-layout title="Dashboard">
   <app-hero-carousel [slides]="heroSlides"></app-hero-carousel>
 
   <div class="products-section-header">
     <h2>Featured Products</h2>
-    <span class="products-see-all">See All</span>
+    <a routerLink="/products" class="products-see-all">See All</a>
   </div>
 
   <div class="products-grid">
-    <div class="product-tile" *ngFor="let product of featuredProducts">
+    <div class="product-tile" *ngFor="let product of featuredProductsLimited">
       <div class="product-tile-photo">
         <img [src]="product.photo" [alt]="product.name" />
       </div>
       <div class="product-tile-info">
         <h3>{{ product.name }}</h3>
         <p class="product-tile-price">{{ product.price }}</p>
+        <p class="product-tile-desc">{{ product.description }}</p>
       </div>
     </div>
-  </div>
-
-  <div class="dashboard-overview">
-    <h3>Dashboard Overview</h3>
-    <p>
-      Serves as the main landing page of the application. Displays an
-      overview of important information, products, or activities.
-    </p>
   </div>
 </app-page-layout>

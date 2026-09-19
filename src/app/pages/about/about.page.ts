@@ -11,5 +11,5 @@ import { PageLayoutComponent } from '../../components/page-layout/page-layout.co
   imports: [CommonModule, IonIcon, PageLayoutComponent],
 })
 export class AboutPage {
-  productPhoto = 'assets/Products/premium_milkmoo.png';
+  productPhoto = 'assets/Products/Miruku Suyu.webp';
 }
