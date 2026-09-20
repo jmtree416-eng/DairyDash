@@ -18,6 +18,7 @@ import {
   gridOutline,
   informationCircleOutline,
   peopleOutline,
+  settingsOutline,
 } from 'ionicons/icons';
 
 interface AppPage {
@@ -59,6 +60,11 @@ export class MenuComponent {
       icon: 'cube-outline',
     },
     {
+      title: 'Manage Products',
+      url: '/manage-products',
+      icon: 'settings-outline',
+    },
+    {
       title: 'About the App',
       url: '/about',
       icon: 'information-circle-outline',
@@ -76,6 +82,8 @@ export class MenuComponent {
       gridOutline,
       informationCircleOutline,
       peopleOutline,
+      settingsOutline,
+      'settings-outline': settingsOutline,
       'cube-outline': cubeOutline,
       'grid-outline': gridOutline,
       'information-circle-outline': informationCircleOutline,

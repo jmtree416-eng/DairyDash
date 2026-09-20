@@ -5,7 +5,7 @@
 >
   <div
     class="hero-carousel-track"
-    [style.transform]="'translateX(-' + (activeIndex * 100) + '%)'"
+    [style.transform]="'translateX(-' + (activeIndex() * 100) + '%)'"
   >
     <div class="hero-slide" *ngFor="let slide of slides; let i = index">
       <img
@@ -27,7 +27,7 @@
     <button
       *ngFor="let _ of slides; let i = index"
       class="hero-carousel-dot"
-      [class.active]="i === activeIndex"
+      [class.active]="i === activeIndex()"
       (click)="goTo(i)"
       [attr.aria-label]="'Go to slide ' + (i + 1)"
     ></button>

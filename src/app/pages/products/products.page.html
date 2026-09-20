@@ -15,7 +15,7 @@
   </div>
 
   <div class="products-grid">
-    <div class="product-tile" *ngFor="let product of filteredProducts">
+    <div class="product-tile" *ngFor="let product of filteredProducts; trackBy: trackById">
       <div class="product-tile-photo">
         <img *ngIf="product.photo" [src]="product.photo" [alt]="product.name" />
       </div>
@@ -26,4 +26,8 @@
       </div>
     </div>
   </div>
+
+  <p class="products-empty" *ngIf="filteredProducts.length === 0">
+    {{ searchQuery.trim() ? 'No products match your search.' : 'There are no products to show.' }}
+  </p>
 </app-page-layout>

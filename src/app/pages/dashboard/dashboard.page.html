@@ -7,9 +7,9 @@
   </div>
 
   <div class="products-grid">
-    <div class="product-tile" *ngFor="let product of featuredProductsLimited">
+    <div class="product-tile" *ngFor="let product of featuredProducts()">
       <div class="product-tile-photo">
-        <img [src]="product.photo" [alt]="product.name" />
+        <img *ngIf="product.photo" [src]="product.photo" [alt]="product.name" />
       </div>
       <div class="product-tile-info">
         <h3>{{ product.name }}</h3>

@@ -9,6 +9,8 @@ ion-content {
 	padding: 20px 16px 32px;
 }
 
+.page-content-narrow { max-width: var(--page-narrow-width, 624px); }
+
 .page-intro { margin-bottom: 22px; }
 .page-eyebrow { margin: 0 0 7px; color: #e8926b; font: 800 11px/1.2 'Nunito', sans-serif; letter-spacing: 1.5px; }
 .page-intro h1 { margin: 0; color: #4a3b34; font-size: clamp(30px, 7vw, 46px); line-height: 1.05; font-weight: 600; }
